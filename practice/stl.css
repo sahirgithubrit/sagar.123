@@ -1,0 +1,13 @@
+body
+{ background-color: cornflowerblue;}
+h1{
+    color: brown;
+    text-align: center;
+}
+p{
+    color: rgb(255, 0, 144);
+}
+p{
+    text-align: center;
+    color: rgb(4, 255, 0);
+}
