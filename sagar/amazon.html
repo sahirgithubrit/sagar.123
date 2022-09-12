@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>amazon</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .row{
+            display: flex;
+        }
+        .logo img{
+            width: 97px;
+            /* height: 30px; */
+            vertical-align: middle;
+        }
+        .header-top{
+            background-color: #131921;
+            color: white;
+            line-height: 60px;
+        }
+        .container{
+            padding: 0 20px;
+        }
+        .search-inp{
+            width: 650px;
+            padding: 10px 50px;
+        }
+        .header-top .row div{
+            margin-right: 10px;
+            margin-left: 15px;
+        }
+        .address{
+            line-height: 15px;
+        }
+        .address>div{
+            margin: 15px 0px !important;
+        }
+        .address>div>div{
+            margin: 0px 5px 0px 0px !important;
+        }
+        .address i{
+            margin-top: 10px !important;
+        }
+        .location img{
+            height: 18px;
+            vertical-align: bottom;
+            margin-bottom: 13px;
+        }
+        .location i{
+            margin-top: 13px;
+            position: relative;
+            bottom: -10px;
+        }
+        .cart{
+            display: flex;
+            align-items: baseline;
+            font-size: 20px;
+        }
+        .cart>i{
+            /* position: relative; */
+            font-size: 29px;
+            vertical-align: middle;
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 3px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px;
+            color: white;
+            text-transform: capitalize;
+        }
+        .navbar li a:hover{
+            outline: 1px solid;
+            border-radius: 2px;
+        }
+        .main-header{
+            background-color: #232f3e;
+        }
+        .child{
+            display: none;
+        }
+        .hover-me:hover .child{
+            display: block;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="address">
+                        <div class="row">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                hello <br>
+                                select your address
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" class="search-inp">
+                    </div>
+                    <div class="location">
+                        <img src="./images/flag-india.png" alt="">
+                        <i class="fa fa-caret-down mt"></i>
+                    </div>
+                    <div class="signin">
+                        hello, sign in
+                    </div>
+                    <div class="order">
+                        order
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                            cart
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#"><i class="fa fa-bars">all</i></a></li>
+                        <li><a href="#">best seller</a></li>
+                        <li><a href="#">mobile</a></li>
+                        <li><a href="#">customer service</a></li>
+                        <li><a href="#">today's deal</a></li>
+                        <li><a href="#">fashion</a></li>
+                        <li><a href="#">electronics</a></li>
+                        <li class="hover-me">
+                            <a href="#">prime <i class="fa fa-caret-down"></i></a>
+                            <div class="child">
+                                <img src="./images/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg" alt="">
+                            </div>
+                        </li>
+                        <li><a href="#">books</a></li>
+                        <li><a href="#">home & kitchen</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

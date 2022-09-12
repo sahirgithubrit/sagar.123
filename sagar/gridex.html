@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid; 
+            /* height: 100%; */
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);  
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .one{
+            grid-column: 1;
+            grid-row: 1/3;
+        }
+        .two{
+            grid-column: 2/4;
+            grid-row: 1;
+        }
+        .three{
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .four{
+            grid-column: 3;
+            grid-row: 2/4;
+        }
+        .five{
+            grid-column: 1/3;
+            grid-row: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one">1<img src="./1179634.jpg" alt=""></div>
+        <div class="two">2<img src="./2573704.jpg" alt=""></div>
+        <div class="three">3<img src="./cody-campbell-T3VTrEuqVKM-unsplash.jpg" alt=""></div>
+        <div class="four">4<img src="./diyar-shahbaz-d16NzExUnNc-unsplash.jpg" alt=""></div>
+        <div class="five">5<img src="./kenny-gaines-9J3byDdJNTQ-unsplash.jpg" alt=""></div>
+        <!-- <div class="six">Six</div> -->
+      </div>
+</body>
+</html>
